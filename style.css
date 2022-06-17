@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Bree+Serif&family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Bree+Serif&family=Bungee&family=Lexend+Deca&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  background-position: center;
+  padding: 24px;
+  background: hsl(0, 0%, 95%);
+}
+.header {
+  text-align: center;
+}
+a {
+  font-size: 32px;
+  padding-right: 16px;
+  text-decoration: none;
+}
+.flex a {
+  color: rgb(1, 1, 35);
+}
+.flex a:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: rgb(1, 1, 35);
+  border-radius: 8px;
+  padding: 8px;
+}
+.grid a {
+  color: hsl(0, 0%, 95%);
+}
+.grid a:hover {
+  color: rgb(1, 1, 35);
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 8px;
+  padding: 8px;
+}
+.company {
+  display: flex;
+  width: 70%;
+  margin: 40px auto; 
+}
+.company-section {
+  padding: 38px;
+}
+.orange {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 0 0 8px;
+}
+.orange button {
+  color: hsl(31, 77%, 52%);
+  border: 1px solid hsl(31, 77%, 52%);
+}
+.orange button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(31, 77%, 52%);
+}
+.cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.cyan button {
+  color: hsl(184, 100%, 22%);
+  border: 1px solid hsl(184, 100%, 22%);
+}
+.cyan button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(184, 100%, 22%);
+}
+.dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0  8px  8px 0;
+}
+.dark-cyan button {
+  color: hsl(179, 100%, 13%);
+  border: 1px solid hsl(179, 100%, 13%);
+}
+.dark-cyan button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(179, 100%, 13%);
+}
+.logo-section img {
+  padding:16px 0;
+}
+button {
+  margin-top:50px ;
+  margin-bottom: 24PX;
+  font-size: 15px;
+  padding: 10px 16px;
+  border-radius: 24px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.text-section p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.text-section h1 {
+  color: hsl(0, 0%, 95%);
+  padding: 24px 0;
+  font-family: 'Big Shoulders Display', cursive;
+}
+/* grid-section */
+.container-2 {
+  background-color: rgb(1, 1, 35);
+  width: 100%;
+  background-position: center;
+  padding: 24px;
+}
+.layout {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "c d d"
+    "c e e";
+  gap: 15px;
+  margin: 50px auto;
+  grid-template-columns: 250px 150px 200px;
+  grid-template-rows: 160px 95px 135px;
+  width: 50%;
+}
+.box1 {
+  background-color: orangered;
+  grid-area: a;
+  color: orangered;
+}
+.box2 {
+  background-color: orange;
+  grid-area: b;
+  color: orange;
+} 
+.box3 {
+  background-color: green;
+  grid-area: c;
+  color: green;
+}
+.box4 {
+  background-color: rgb(43, 107, 255);
+  grid-area: d;
+  color: rgb(43, 107, 255);
+}
+.box5 {
+    background-color: rgb(43, 107, 255);
+    grid-area: e;
+    color: rgb(43, 107, 255);
+  } 
+
+@media (max-width:375px) {
+  .company {
+    flex-direction: column;
+    margin: 0px auto;
+    width: 100%;
+  }
+  .orange, .dark-cyan {
+    border-radius: 0px;
+  }
+  .layout {
+    display: grid;
+    grid-template-areas:
+      "a a b"
+      "c d d"
+      "c e e";
+    gap: 5px;
+    margin:32px 0px;
+    grid-template-columns: 150px 50px 100px;
+    grid-template-rows: 160px 95px 135px;
+    width: 100%;
+  }
+}
